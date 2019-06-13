@@ -1,0 +1,13 @@
+.nav {
+    grid-area: n;
+    background-color: rgb(169, 231, 255);
+}
+
+.item {
+    list-style-type: none;
+}
+
+.link {
+    text-decoration: none;
+    color: #fff;
+}
