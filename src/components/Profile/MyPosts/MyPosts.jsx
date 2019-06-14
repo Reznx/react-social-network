@@ -2,6 +2,11 @@ import React from "react";
 import s from "./MyPosts.module.css";
 import Post from "./Post/Post";
 
+let postsData = [
+  { id: 1, message: "Hi, how are you?", likesCount: 3 },
+  { id: 2, message: "Hi, i`m fine. And i`m beginner programmer", likesCount: 12 },
+];
+
 const MyPosts = () => {
   return (
     <div className={s.posts_block}>
@@ -13,10 +18,13 @@ const MyPosts = () => {
         <button className={s.btn}>Add post</button>
       </div>
       <div className={s.posts}>
-        <Post message="Hi, how are you?" likeCount=" 2" />
         <Post
-          message="Hi, i`m fine? And i`m beginner programmer"
-          likeCount=" 11"
+          message={postsData[0].message}
+          likesCount={postsData[0].likeCount}
+        />
+        <Post
+          message={postsData[0].message}
+          likesCount={postsData[0].likeCount}
         />
       </div>
     </div>
