@@ -1,13 +1,27 @@
 .nav {
     grid-area: n;
     background-color: rgb(169, 231, 255);
+    
+
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
 }
 
 .item {
     list-style-type: none;
+    margin-top: 5px;
+    border-bottom: 1px solid #000;
 }
 
 .link {
     text-decoration: none;
     color: #fff;
+    
+}
+.link.active_link {
+    color: rgb(0, 160, 209)
 }
