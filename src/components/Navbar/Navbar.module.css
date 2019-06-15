@@ -1,27 +1,43 @@
 .nav {
     grid-area: n;
-    background-color: rgb(169, 231, 255);
     
-
 }
 
 .list {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
+    width: 200px;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #e7e7e7;
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 .item {
+    width: 100%;
     list-style-type: none;
-    margin-top: 5px;
-    border-bottom: 1px solid #000;
+    color: #F6F6F6;
+    background-color: #F3F3F3;
+    border-bottom: 1px solid #e7e7e7;
+    
+}
+
+.item:last-child {
+    border: none;
 }
 
 .link {
+    display: block;
+    padding: 10px 20px;
     text-decoration: none;
-    color: #fff;
-    
+    color: #B9BBC5;
+
+    transition: linear .2s color;
 }
+
+.link:hover {
+    color: #747474;
+}
+
 .link.active_link {
-    color: rgb(0, 160, 209)
+    color: #0068a5;
 }

@@ -8,12 +8,13 @@ import News from "./components/News/News";
 import Settings from "./components/Settings/Settings";
 import Music from "./components/Music/Music";
 import { BrowserRouter, Route } from "react-router-dom";
+import Footer from "./components/Footer/Footer";
 
 const App = props => {
   return (
     <BrowserRouter>
+      <Header />
       <div className="app__wrapper">
-        <Header />
         <Navbar />
         <div className="app__wrapper-content">
           <Route path="/dialogs" component={Dialogs} />
@@ -23,6 +24,7 @@ const App = props => {
           <Route path="/settings" component={Settings} />
         </div>
       </div>
+      <Footer />
     </BrowserRouter>
   );
 };

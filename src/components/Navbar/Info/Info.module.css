@@ -1,0 +1,15 @@
+.info {
+    background: #F3F3F3;
+    width: 200px;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #e7e7e7;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.info img {
+    margin: 0 auto;
+    padding: 10px 0px 70px 50px;
+    border-radius: 10px;
+}

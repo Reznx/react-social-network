@@ -1,14 +1,11 @@
 import React from "react";
 import s from "./Header.module.css";
+import Logo from "./Logo/Logo";
 
 const Header = () => {
   return (
     <header className={s.header}>
-      <img
-        src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Android_O_Preview_Logo.png"
-        alt="logo"
-        className={s.img}
-      />
+      <Logo />
     </header>
   );
 };

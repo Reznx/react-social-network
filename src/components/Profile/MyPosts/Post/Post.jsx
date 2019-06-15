@@ -7,7 +7,7 @@ const Post = (props) => {
       <img src="https://deti-online.com/img/raskraska-kot.jpg" alt="Avatar" />
       {props.message}
       <div>
-        <span>Like</span>{props.likeCount}
+        <span>Like</span>{props.likesCount}
       </div>
     </div>
   );

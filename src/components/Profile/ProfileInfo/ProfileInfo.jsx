@@ -7,7 +7,7 @@ const ProfileInfo = () => {
       <img
         src="http://shapka-youtube.ru/wp-content/uploads/2018/10/beztexta-category.jpg"
         alt="GreatPicture"
-        class="content__img"
+        className={s.img}
       />
       <div className={s.descr_block}>AVA + DESCRIPTION</div>
     </div>

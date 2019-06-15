@@ -1,0 +1,6 @@
+.footer {
+    grid-area: f;
+    width: 100%;
+    background: #E44D3A;
+    height: 50px;
+}
