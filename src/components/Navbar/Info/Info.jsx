@@ -10,6 +10,7 @@ const Info = () => {
         src={img}
         alt="Avatar"
       />
+      <span className={s.name}>Jon Doe</span>
     </div>
   );
 };

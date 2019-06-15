@@ -1,6 +1,7 @@
 .info {
     background: #F3F3F3;
     width: 200px;
+    height: 200px;
     margin: 0;
     padding: 0;
     border: 1px solid #e7e7e7;
@@ -10,6 +11,14 @@
 }
 .info img {
     margin: 0 auto;
-    padding: 10px 0px 70px 50px;
+    padding: 10px;
+    padding-left: 50px;
     border-radius: 10px;
+}
+
+.name {
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
 }

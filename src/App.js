@@ -8,7 +8,6 @@ import News from "./components/News/News";
 import Settings from "./components/Settings/Settings";
 import Music from "./components/Music/Music";
 import { BrowserRouter, Route } from "react-router-dom";
-import Footer from "./components/Footer/Footer";
 
 const App = props => {
   return (
@@ -24,7 +23,6 @@ const App = props => {
           <Route path="/settings" component={Settings} />
         </div>
       </div>
-      <Footer />
     </BrowserRouter>
   );
 };

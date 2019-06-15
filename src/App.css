@@ -20,7 +20,7 @@ body {
   grid-template-areas:
     "h h"
     "n c"
-    "f f";
+    "n c";
   grid-template-rows: 10px 1fr;
   grid-template-columns: 20% 4fr;
 }
