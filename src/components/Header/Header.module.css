@@ -1,5 +1,7 @@
 
 .header {
     grid-area: h;
+    height: 50px;
     background: #E44D3A;
+    border-radius: 5px;
 }

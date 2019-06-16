@@ -15,14 +15,14 @@ body {
 .app__wrapper {
   margin: 0 auto;
   display: grid;
-  width: 1200px;
+  max-width: 1200px;
   margin-bottom: 10px;
   grid-template-areas:
     "h h"
     "n c"
     "n c";
-  grid-template-rows: 10px 1fr;
-  grid-template-columns: 20% 4fr;
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 19% 1fr;
 }
 
 .app__wrapper-content {
