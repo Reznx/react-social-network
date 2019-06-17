@@ -27,11 +27,14 @@ let state = {
       { id: 6, name: "Alex" }
     ]
   },
-  sideBar: [
-      { name: "Elena" },
-      { name: "Draynis" },
-      { name: "Lamar" },
+  sidebar: {
+    friends: [
+      { id: 1, name: "Elena" },
+      { id: 2, name: "Draynis" },
+      { id: 3, name: "Lamar" },
+      { id: 4, name: "Maqueen" }
     ]
+  }
 };
 
 export default state;
