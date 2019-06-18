@@ -2,6 +2,7 @@ import React from "react";
 import s from "./Dialogs.module.css";
 import DialogItem from "./DialogItem/DialogItem";
 import Message from "./Message/Message";
+import Textarea from "./Textarea/Textarea";
 
 const Dialogs = props => {
   let dialogsElements = props.state.dialogs.map(d => (
@@ -16,6 +17,7 @@ const Dialogs = props => {
     <div className={s.dialogs}>
       <div className={s.dialogs_list}>{dialogsElements}</div>
       <div className={s.messages_list}>{messagesElements}</div>
+      <Textarea />
     </div>
   );
 };
