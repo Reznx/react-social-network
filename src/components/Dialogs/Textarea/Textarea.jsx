@@ -1,17 +1,28 @@
 import React from "react";
 
 const Textarea = props => {
+
   let createNewMessage = React.createRef();
 
-  let newMessage = () => {
-    let text = createNewMessage.current.value;
+  let addMessage = () => {
+    props.addMessage();
   };
+
+  let onMessageChange = () => {
+    let text = createNewMessage.current.value;
+    props.updateNewMessageText(text);
+  };
+
   return (
     <div>
       <div>
-        <textarea cols="30" rows="10" />
+        <textarea
+          ref={createNewMessage}
+          onChange={onMessageChange}
+          value={props.newMessageText}
+        />
       </div>
-      <button onClick={newMessage}>New message</button>
+      <button onClick={addMessage}>New message</button>
     </div>
   );
 };

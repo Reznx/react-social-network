@@ -28,7 +28,8 @@ let state = {
       { id: 4, name: "Sergey" },
       { id: 5, name: "Petr" },
       { id: 6, name: "Alex" }
-    ]
+    ],
+    newMessageText: "Enter your message"
   },
   sidebar: {
     friends: [
@@ -40,7 +41,7 @@ let state = {
   }
 };
 
-
+// Post textarea settings
 export let addPost = () => {
   let newPost = {
     id: 5,
@@ -49,12 +50,29 @@ export let addPost = () => {
   };
 
   state.profilePage.posts.push(newPost);
-  state.profilePage.newPostText= '';
+  state.profilePage.newPostText='';
   rerenderEntireTree(state);
 };
 
 export let updateNewPostText = newText => {
   state.profilePage.newPostText = newText;
+  rerenderEntireTree(state);
+};
+
+// Message textarea settings
+export let addMessage = () => {
+  let newMessage = {
+    id: 5,
+    message: state.dialogsPage.newMessageText
+  };
+
+  state.dialogsPage.messages.push(newMessage);
+  state.dialogsPage.newMessageText='';
+  rerenderEntireTree(state);
+};
+
+export let updateNewMessageText = newText => {
+  state.dialogsPage.newMessageText = newText;
   rerenderEntireTree(state);
 };
 
