@@ -5,12 +5,14 @@ const Textarea = props => {
 
   let newMessage = () => {
     let text = createNewMessage.current.value;
-  }
+  };
   return (
-    <form action="" ref={createNewMessage}>
-      <textarea cols="30" rows="10" />
+    <div>
+      <div>
+        <textarea cols="30" rows="10" />
+      </div>
       <button onClick={newMessage}>New message</button>
-    </form>
+    </div>
   );
 };
 

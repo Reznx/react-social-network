@@ -14,9 +14,11 @@ const Dialogs = props => {
   ));
 
   return (
-    <div className={s.dialogs}>
-      <div className={s.dialogs_list}>{dialogsElements}</div>
-      <div className={s.messages_list}>{messagesElements}</div>
+    <div>
+      <div className={s.dialogs}>
+        <div className={s.dialogs_list}>{dialogsElements}</div>
+        <div className={s.messages_list}>{messagesElements}</div>
+      </div>
       <Textarea />
     </div>
   );
