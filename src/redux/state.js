@@ -15,7 +15,7 @@ let store = {
           likesCount: 12
         }
       ],
-      newPostText: "Reznik"
+      newPostText: ""
     },
     dialogsPage: {
       messages: [
@@ -34,7 +34,7 @@ let store = {
         { id: 5, name: "Petr" },
         { id: 6, name: "Alex" }
       ],
-      newMessageText: "Enter your message"
+      newMessageText: ""
     },
     sidebar: {
       friends: [
