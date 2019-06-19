@@ -5,12 +5,12 @@ const Textarea = props => {
   let createNewMessage = React.createRef();
 
   let addMessage = () => {
-    props.addMessage();
+    props.dispatch({ type: "ADD-MESSAGE" });
   };
 
   let onMessageChange = () => {
     let text = createNewMessage.current.value;
-    props.updateNewMessageText(text);
+    props.dispatch({ type: "UPDATE-NEW-MESSAGE-TEXT", newText: text });
   };
 
   return (

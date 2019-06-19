@@ -21,8 +21,7 @@ const Dialogs = props => {
       </div>
       <Textarea
         newMessageText={props.dialogsPage.newMessageText}
-        addMessage={props.addMessage}
-        updateNewMessageText={props.updateNewMessageText}
+        dispatch={props.dispatch}
       />
     </div>
   );
