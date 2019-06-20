@@ -2,7 +2,7 @@ import React from "react";
 import {
   addMessageActionCreator,
   updateNewMessageTextActionCreator
-} from "../../../redux/state";
+} from "../../../redux/dialogs_reducer";
 
 const Textarea = props => {
   let addMessage = () => {
