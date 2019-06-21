@@ -28,7 +28,6 @@ const dialogsReducer = (state = initialState, action) => {
         id: 5,
         message: state.newMessageText
       };
-
       state.messages.push(newMessage);
       state.newMessageText = "";
       return state;
@@ -38,6 +37,7 @@ const dialogsReducer = (state = initialState, action) => {
     default:
       return state;
   }
+  return state;
 };
 
 // Textarea message function

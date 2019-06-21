@@ -3,6 +3,7 @@ import s from "./Navbar.module.css";
 import { NavLink } from "react-router-dom";
 import Info from "./Info/Info";
 import Friends from "./Friends/Friends";
+import StoreContext from './../../StoreContext';
 
 const Navbar = props => {
   return (
@@ -57,7 +58,6 @@ const Navbar = props => {
           </li>
         </ul>
       </nav>
-      <Friends friends={props.state.friends} />
     </div>
   );
 };

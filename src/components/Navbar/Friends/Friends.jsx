@@ -4,13 +4,13 @@ import Friend from "./Friend/Friend";
 
 
 const Friends = (props) => {
-  let friendsElements = props.friends.map(f => (
+  let friendsElements = props.friends.friends.map(f => (
     <Friend name={f.name}/>
   ));
 
   return (
     <div className={s.info}>
-      <h2 className={s.title}> Friends</h2>
+      <h2 className={s.title}>Friends</h2>
       <div className={s.friends_list}>
         <div>{friendsElements}</div>
       </div>

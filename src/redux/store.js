@@ -34,14 +34,12 @@ let store = {
       ],
       newMessageText: "Reznik"
     },
-    sidebar: {
-      friends: [
+    sidebar: [
         { id: 1, name: "Elena" },
         { id: 2, name: "Draynis" },
         { id: 3, name: "Lamar" },
         { id: 4, name: "Maqueen" }
       ]
-    }
   },
   _callSubscriber() {
     console.log("state");

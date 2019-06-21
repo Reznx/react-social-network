@@ -9,8 +9,7 @@ const Profile = (props) => {
     <div className={s.profile}>
       <h1 className={s.visually_hidden}>Social Network</h1>
       <ProfileInfo />
-      <MyPostsContainer store={props.store}
-      />
+      <MyPostsContainer />
     </div>
   );
 };
