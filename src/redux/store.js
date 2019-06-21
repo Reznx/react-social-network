@@ -32,7 +32,7 @@ let store = {
         { id: 5, name: "Petr" },
         { id: 6, name: "Alex" }
       ],
-      newMessageText: ""
+      newMessageText: "Reznik"
     },
     sidebar: {
       friends: [
