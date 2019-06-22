@@ -2,8 +2,6 @@ import React from "react";
 import s from "./Navbar.module.css";
 import { NavLink } from "react-router-dom";
 import Info from "./Info/Info";
-import Friends from "./Friends/Friends";
-import StoreContext from './../../StoreContext';
 
 const Navbar = props => {
   return (

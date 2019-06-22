@@ -8,13 +8,12 @@ import Settings from "./components/Settings/Settings";
 import Music from "./components/Music/Music";
 import { Route } from "react-router-dom";
 import DialogsContainer from "./components/Dialogs/DialogsContainer";
-import NavbarContainer from './components/Navbar/NavbarContainer';
 
 const App = props => {
   return (
     <div className="app__wrapper">
       <Header />
-      <NavbarContainer />
+      <Navbar />
       <div className="app__wrapper-content">
         <Route path="/dialogs" render={() => <DialogsContainer />} />
         <Route path="/profile" render={() => <Profile />} />

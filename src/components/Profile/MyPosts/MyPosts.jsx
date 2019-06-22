@@ -6,13 +6,14 @@ const MyPosts = props => {
   let postsElements = props.posts.map(p => (
     <Post message={p.message} likesCount={p.likesCount} />
   ));
+  let newPostElement = React.createRef();
 
   let onAddPost = () => {
     props.addPost();
   };
 
-  let onPostChange = e => {
-    let text = e.target.value;;
+  let onPostChange = () => {
+    let text = newPostElement.current.value;;
     props.updateNewPostText(text);
   };
 
@@ -22,6 +23,7 @@ const MyPosts = props => {
       <div className={s.block_text}>
         <div>
           <textarea
+            ref={newPostElement}
             onChange={onPostChange}
             value={props.newPostText}
             placeholder="Enter your post here"
