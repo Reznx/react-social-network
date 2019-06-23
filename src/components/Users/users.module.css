@@ -2,3 +2,31 @@
     width: 100px;
     height: 100px;
 }
+
+.users {
+    display: flex;
+    justify-content: space-between;
+}
+
+.users_block {
+    padding: 20px;
+    width: 20%;
+}
+
+.users_info {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    
+    border: 1px solid #e7e7e7;
+    border-radius: 5px;
+}
+
+.users_name {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}

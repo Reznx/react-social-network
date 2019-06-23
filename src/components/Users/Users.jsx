@@ -4,19 +4,22 @@ import * as axios from "axios";
 import userImg from "../../assets/img/user_no_img.png";
 
 let Users = props => {
-  if (props.users.length === 0) {
-    axios
-      .get("https://social-network.samuraijs.com/api/1.0/users")
-      .then(response => {
-        props.setUsers(response.data.items);
-      });
-  }
+  let getUsers = () => {
+    if (props.users.length === 0) {
+      axios
+        .get("https://social-network.samuraijs.com/api/1.0/users")
+        .then(response => {
+          props.setUsers(response.data.items);
+        });
+    }
+  };
 
   return (
     <div>
+      <button onClick={getUsers}>Show more users...</button>
       {props.users.map(u => (
-        <div key={u.id}>
-          <span>
+        <div key={u.id} className={styles.users}>
+          <div className={styles.users_block}>
             <div>
               <img
                 src={u.photos.small !== null ? u.photos.small : userImg}
@@ -42,17 +45,17 @@ let Users = props => {
                 </button>
               )}
             </div>
-          </span>
-          <span>
-            <span>
-              <div>{u.name}</div>
+          </div>
+          <div className={styles.users_info}>
+            <div>
+              <div className={styles.users_name}>{u.name}</div>
               <div>{u.status}</div>
-            </span>
-            <span>
+            </div>
+            <div>
               <div>{"u.location.country"}</div>
               <div>{"u.location.city"}</div>
-            </span>
-          </span>
+            </div>
+          </div>
         </div>
       ))}
     </div>
