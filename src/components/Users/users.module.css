@@ -30,3 +30,23 @@
     font-weight: 300;
     text-transform: uppercase;
 }
+
+.users_list {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    
+}
+
+.users_list span {
+    display: block;
+    cursor: pointer;
+    padding-right: 5px;
+    font-size: 18px;
+}
+
+
+.selected_page {
+    font-weight: 700;
+    color: #0068a5;
+}
