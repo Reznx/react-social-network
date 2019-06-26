@@ -5,3 +5,8 @@
     background: #E44D3A;
     border-radius: 5px;
 }
+
+.login_block {
+    display: flex;
+    justify-content: space-between;
+}

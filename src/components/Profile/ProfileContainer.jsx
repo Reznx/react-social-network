@@ -23,11 +23,11 @@ class ProfileContainer extends React.Component {
   }
 }
 
-let mapStateToProps = state => ({
+const mapStateToProps = state => ({
   profile: state.profilePage.profile
 });
 
-let WithUrlDataContainerComponent = withRouter(ProfileContainer);
+const WithUrlDataContainerComponent = withRouter(ProfileContainer);
 
 export default connect(
   mapStateToProps,
