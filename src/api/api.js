@@ -14,11 +14,17 @@ export const usersAPI = {
   }
 }
 
+export const unfollow = (id) => {
+    return instance
+      .delete(`follow/${id}`)
+  }
+
 export const follow = (id) => {
     return instance
-      .get(`follow/${id}`)
-      .then(response => response.data);
+      .post(`follow/${id}`,{})
   }
+
+
 
 
 // Axios.post(
